@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+
+#logo{
+    margin: 13px;
+    height: px;
+}
+
+#logo img{
+    height: 70px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+/* The black bar behind navbar */
+#navbar::before{            
+    content: "";
+    position:absolute;
+    background-color: black;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+
+#navbar ul li{ 
+    padding: 23px 200px 25px 20px;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    margin-bottom: 500px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1{
+    font-size: 70px;
+    margin-top: 270px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+#home p{
+    font-size: 35px;
+    margin-top: 30px;
+    color: white;
+}
+
+#home button{
+    margin-top: 25px;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../studio2.jpg') no-repeat center center/cover;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:5.5;
+}
+#services-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    
+}
+
+#services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#services.box{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#services-container img{
+    height: 34vh;
+    width: 40vh;
+    margin-bottom: 40px;
+    margin-top: 40px;
+} 
+
+#services-container h2{
+    margin-bottom: 30px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 34px;
+}
